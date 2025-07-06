@@ -124,6 +124,7 @@ class MJPEGStreamer : public nadjieb::utils::NonCopyable {
         init_res.setValue("Connection", "close");
         init_res.setValue("Cache-Control", "no-cache, no-store, must-revalidate, pre-check=0, post-check=0, max-age=0");
         init_res.setValue("Pragma", "no-cache");
+        init_res.setValue("Access-Control-Allow-Origin", "*");
         init_res.setValue("Content-Type", "multipart/x-mixed-replace; boundary=nadjiebmjpegstreamer");
         auto init_res_str = init_res.serialize();
 
